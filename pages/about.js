@@ -13,7 +13,7 @@ export default function about({ ninjas }) {
     <div>
       <h1>About</h1>
       {ninjas.map(ninja => (
-        <div style={{border:'1px solid red'}}>
+        <div key={ninja.id} style={{border:'1px solid red'}}>
           <h1>{ninja.name}</h1>
           <p>{ninja.username}</p>
         </div>
